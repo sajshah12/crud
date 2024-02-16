@@ -1,3 +1,4 @@
+
 from django import forms 
 from.models import User
 class Userregister(forms.ModelForm):
@@ -5,12 +6,13 @@ class Userregister(forms.ModelForm):
         model = User
         fields = ['name','email','password']
         widgets = {
-            'name':forms.TextInput(attrs={'class':'form-control'}),
-            'email':forms.TextInput(attrs={'class':'form-control'}),
-            'password':forms.TextInput(attrs={'class':'form-control'}),
-       
-       
-       
+            'name':forms.TextInput(attrs={'class':'forms_control'}),
+            'email':forms.TextInput(attrs={'class':'forms_control'}),
+            'password':forms.TextInput(attrs={'class':'forms_control'}),
+     
             
+     
+           
         }
-    
+        
+     
