@@ -4,5 +4,5 @@ from student import views
 
 
 urlpatterns = [
-    path('delete<int>/',views.delete,home='delete'),
+    path('<int>/',views.delete,home='delete'),
 ]
