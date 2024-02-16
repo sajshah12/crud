@@ -1,4 +1,6 @@
 from django.shortcuts import render,HttpResponsePermanentRedirect
+from models import User
+from forms import Userregister
 
 # Create your views here.
 def delete(request,id):
