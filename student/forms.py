@@ -1,4 +1,5 @@
-from django import forms
+
+from django import forms 
 from.models import User
 class Userregister(forms.ModelForm):
     class Meta:
@@ -14,4 +15,4 @@ class Userregister(forms.ModelForm):
            
         }
         
-        
+     
