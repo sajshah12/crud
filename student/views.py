@@ -12,7 +12,7 @@ def add(request):
             fm = Userregister()
     else:
         fm = Userregister()
-        return render(request,'add.html',{'form':fm,'stu':st})
+        return render(request,'add.html',{'form':fm,'Stud':st})
 
 
 def delete(request,id):
