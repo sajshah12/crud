@@ -17,7 +17,7 @@ def add(request):
 
 def delete(request,id):
     if request.method == 'POST':
-        dl = User.object.get(pk=id)
+        dl = User.objects.get(pk=id)
         dl.delete()
         return HttpResponsePermanentRedirect('/')
     
