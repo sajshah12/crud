@@ -20,3 +20,18 @@ def delete(request,id):
         dl = User.object.get(pk=id)
         dl.delete()
         return HttpResponsePermanentRedirect('/')
+    
+
+    
+
+def update(request, id):
+    if request.method == 'POST':
+        pi = User.objects.get(pk=id)
+        sm = Userregister(request.POST,instance=pi)
+        if sm.is_valid():
+            sm.save()
+    else:
+        pi = User.objects.get(pk=id)
+        sm = Userregister(instance=pi)
+    return render(request, 'update_student.html',{'form':sm})    
+   
