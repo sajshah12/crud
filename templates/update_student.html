@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block text %}
+<div class="row">
+    <div class="col-sm-8">
+        <h1 class="alert alert-info">UPDATE_STUDENDS DATA HERE</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <a href="{% url 'add' %}" class="btn btn-danger">BACK TO HOME</a>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock text %}
