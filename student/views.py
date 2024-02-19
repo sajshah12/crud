@@ -11,7 +11,7 @@ def add(request):
             fm.save()
             fm = Userregister()
     else:
-        fm = Userregister()
+       fm = Userregister()
     return render(request,'add_student.html',{'form':fm,'Stud':st})
 
 
